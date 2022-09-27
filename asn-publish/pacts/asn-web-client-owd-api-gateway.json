@@ -1,0 +1,76 @@
+{
+  "consumer": {
+    "name": "asn-web-client"
+  },
+  "provider": {
+    "name": "owd-api-gateway"
+  },
+  "interactions": [
+    {
+      "description": "a request to GET account by Id",
+      "providerState": "account not exists",
+      "request": {
+        "method": "GET",
+        "path": "/api/dictionary-service/accounts/0"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+        }
+      }
+    },
+    {
+      "description": "a request to GET account by Id",
+      "providerState": "account exists",
+      "request": {
+        "method": "GET",
+        "path": "/api/dictionary-service/accounts/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": "Id",
+          "code": "code",
+          "name": "name",
+          "groupName": "groupName",
+          "state": "Active",
+          "contact": {
+            "firstName": "FirstName",
+            "lasName": "LastName",
+            "email": "Email",
+            "phoneNumber": "Phone",
+            "faxNumber": "Fax",
+            "city": "City",
+            "stateOrProvinceCode": "State",
+            "postalCode": "Zip",
+            "countryCode": "Country",
+            "addressLines": [
+              "AddressLine1"
+            ]
+          },
+          "externalCustomerCode": "ExtCode",
+          "url": "Url",
+          "facilities": [
+            "Facility1"
+          ],
+          "discountSharePct": 0,
+          "emailFooterText": "EmailFooterText",
+          "customerShipmentNotification": true
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

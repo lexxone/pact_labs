@@ -1,0 +1,17 @@
+{
+  "name": "asn-provider",
+  "version": "1.0.0",
+  "description": "Test provider API for Pact consumer contracts publish",
+  "main": "publish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CorePartners Inc",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.11.0",
+    "@pact-foundation/pact-node": "^10.9.5",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

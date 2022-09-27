@@ -1,0 +1,29 @@
+[{
+    "id": "1",
+    "code": "code",
+    "name": "name",
+    "groupName": "groupName",
+    "state": "Active",
+    "contact": {
+      "firstName": "FirstName",
+      "lasName": "LastName",
+      "email": "Email",
+      "phoneNumber": "Phone",
+      "faxNumber": "Fax",
+      "city": "City",
+      "stateOrProvinceCode": "State",
+      "postalCode": "Zip",
+      "countryCode": "Country",
+      "addressLines": [
+        "AddressLine1"
+      ]
+    },
+    "externalCustomerCode": "ExtCode",
+    "url": "Url",
+    "facilities": [
+      "Facility1"
+    ],
+    "discountSharePct": 0,
+    "emailFooterText": "EmailFooterText",
+    "customerShipmentNotification": true
+}]
